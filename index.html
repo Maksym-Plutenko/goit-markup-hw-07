@@ -36,33 +36,33 @@
   <body>
     <!--Header-->
     <header class="header">
-      <div class="container header-container">
-        <a class="logo" href="./index.html"> Web<span class="dark-text">Studio</span> </a>
-        <nav class="header-navigation">
-          <ul class="header-navigation-list">
-            <li class="header-navigation-item">
-              <a class="header-navigation-link active" href="./index.html">Студія</a>
+      <div class="container header__container">
+        <a class="logo header__logo" href="./index.html"> Web<span class="dark-text">Studio</span> </a>
+        <nav class="navigation">
+          <ul class="navigation__list list">
+            <li class="navigation__item">
+              <a class="navigation__link link active" href="./index.html">Студія</a>
             </li>
-            <li class="header-navigation-item">
-              <a class="header-navigation-link" href="./portfolio.html">Портфоліо</a>
+            <li class="navigation__item">
+              <a class="navigation__link link" href="./portfolio.html">Портфоліо</a>
             </li>
-            <li class="header-navigation-item">
-              <a class="header-navigation-link" href="#footer">Контакти</a>
+            <li class="navigation__item">
+              <a class="navigation__link link" href="#footer">Контакти</a>
             </li>
           </ul>
         </nav>
-        <ul class="header-contacts">
-          <li class="header-contacts-item">
-            <a class="header-contacts-link" href="mailto:info@devstudio.com">
-              <svg class="header-contacts-icon" width="16px" height="12px">
+        <ul class="contacts list">
+          <li class="contacts__item">
+            <a class="contacts__link link" href="mailto:info@devstudio.com">
+              <svg class="contacts__icon" width="16px" height="12px">
                 <use href="./images/icons.svg#envelope"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
-          <li class="header-contacts-item">
-            <a class="header-contacts-link" href="tel:+380961111111">
-              <svg class="header-contacts-icon" width="10px" height="16px">
+          <li class="contacts__item">
+            <a class="contacts__link link" href="tel:+380961111111">
+              <svg class="contacts__icon" width="10px" height="16px">
                 <use href="./images/icons.svg#phone"></use>
               </svg>
               +38 096 111 11 11
@@ -77,58 +77,58 @@
       <!--Front section-->
 
       <section class="front">
-        <div class="container front-container">
-          <h1 class="front-title">Ефективні рішення для<br />вашого бізнесу</h1>
-          <button class="front-btn" type="button" data-modal-open>Замовити послугу</button>
+        <div class="container">
+          <h1 class="front__title">Ефективні рішення для<br />вашого бізнесу</h1>
+          <button class="front__btn button" type="button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
 
       <!--Benefits-->
       <section class="benefits section">
         <div class="container">
-          <h2 hidden class="benefits-title">Наші переваги</h2>
-          <ul class="benefits-list">
-            <li class="benefits-item">
-              <div class="benefits-item-rectangle">
+          <h2 class="benefits__title visually-hidden">Наші переваги</h2>
+          <ul class="benefits__list list">
+            <li class="benefits__item">
+              <div class="advantage">
                 <svg class="benefits-item-logo" width="70px" height="70px">
                   <use href="./images/icons.svg#antenna"></use>
                 </svg>
               </div>
-              <h3 class="benefits-item-title">УВАГА ДО ДЕТАЛЕЙ</h3>
-              <p class="benefits-item-content">
+              <h3 class="advantage__title">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <p class="advantage__content">
                 Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
               </p>
             </li>
-            <li class="benefits-item">
-              <div class="benefits-item-rectangle">
+            <li class="benefits__item">
+              <div class="advantage">
                 <svg class="benefits-item-logo" width="70px" height="70px">
                   <use href="./images/icons.svg#clock"></use>
                 </svg>
               </div>
-              <h3 class="benefits-item-title">ПУНКТУАЛЬНІСТЬ</h3>
-              <p class="benefits-item-content">
+              <h3 class="advantage__title">ПУНКТУАЛЬНІСТЬ</h3>
+              <p class="advantage__content">
                 Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
               </p>
             </li>
-            <li class="benefits-item">
-              <div class="benefits-item-rectangle">
+            <li class="benefits__item">
+              <div class="advantage">
                 <svg class="benefits-item-logo" width="70px" height="70px">
                   <use href="./images/icons.svg#diagram"></use>
                 </svg>
               </div>
-              <h3 class="benefits-item-title">ПЛАНУВАННЯ</h3>
-              <p class="benefits-item-content">
+              <h3 class="advantage__title">ПЛАНУВАННЯ</h3>
+              <p class="advantage__content">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li class="benefits-item">
-              <div class="benefits-item-rectangle">
+            <li class="benefits__item">
+              <div class="advantage">
                 <svg class="benefits-item-logo" width="70px" height="70px">
                   <use href="./images/icons.svg#astronaut"></use>
                 </svg>
               </div>
-              <h3 class="benefits-item-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-              <p class="benefits-item-content">
+              <h3 class="advantage__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <p class="advantage__content">
                 Значимість цих проблем настільки очевидна, що реалізація планових завдань.
               </p>
             </li>
@@ -139,42 +139,42 @@
       <!--Activity-->
       <section class="activity section">
         <div class="container">
-          <h2 class="activity-title section-title">Чим ми займаємося</h2>
-          <ul class="activity-list">
-            <li class="activity-item">
+          <h2 class="activity__title section__title">Чим ми займаємося</h2>
+          <ul class="activity__list list">
+            <li class="activity-example">
               <img
-                class="activity-item-img"
+                class="activity-example__img"
                 src="images/activity/img1.jpg"
                 alt="Веб-розробка"
                 width="370"
                 height="294"
               />
-              <div class="activity-item-description">
-                <p class="activity-item-description-text">Десктопні додатки</p>
+              <div class="activity-example__description">
+                <p class="activity-example__text">Десктопні додатки</p>
               </div>
             </li>
-            <li class="activity-item">
+            <li class="activity-example">
               <img
-                class="activity-item-img"
+                class="activity-example__img"
                 src="images/activity/img2.jpg"
                 alt="Розробка мобільних застосунків"
                 width="370"
                 height="294"
               />
-              <div class="activity-item-description">
-                <p class="activity-item-description-text">Мобільні додатки</p>
+              <div class="activity-example__description">
+                <p class="activity-example__text">Мобільні додатки</p>
               </div>
             </li>
-            <li class="activity-item">
+            <li class="activity-example">
               <img
-                class="activity-item-img"
+                class="activity-example__img"
                 src="images/activity/img3.jpg"
                 alt="Оригінальні дизайнерські рішення"
                 width="370"
                 height="294"
               />
-              <div class="activity-item-description">
-                <p class="activity-item-description-text">Дизайнерські рішення</p>
+              <div class="activity-example__description">
+                <p class="activity-example__text">Дизайнерські рішення</p>
               </div>
             </li>
           </ul>
@@ -184,19 +184,19 @@
       <!--Team-->
       <section class="team section">
         <div class="container">
-          <h2 class="team-title section-title">Наша команда</h2>
-          <ul class="team-list">
+          <h2 class="team__title section__title">Наша команда</h2>
+          <ul class="team__list list">
             <li class="team-member">
               <img
-                class="team-member-photo"
+                class="team-member__photo"
                 src="images/team/img1.jpg"
                 alt="Фото Ігоря Дем'яненка"
                 width="270"
                 height="260"
               />
-              <div class="team-member-description">
-                <h3 class="team-member-name">Ігор Дем'яненко</h3>
-                <p class="team-member-position" lang="en">Product Designer</p>
+              <div class="team-member__description">
+                <h3 class="team-member__name">Ігор Дем'яненко</h3>
+                <p class="team-member__position" lang="en">Product Designer</p>
                 <ul class="socials-list">
                   <li class="socials-item">
                     <a href="" class="socials-link">
@@ -231,15 +231,15 @@
             </li>
             <li class="team-member">
               <img
-                class="team-member-photo"
+                class="team-member__photo"
                 src="images/team/img2.jpg"
                 alt="Фото Ольги Рєпіної"
                 width="270"
                 height="260"
               />
-              <div class="team-member-description">
-                <h3 class="team-member-name">Ольга Рєпіна</h3>
-                <p class="team-member-position" lang="en">Frontend Developer</p>
+              <div class="team-member__description">
+                <h3 class="team-member__name">Ольга Рєпіна</h3>
+                <p class="team-member__position" lang="en">Frontend Developer</p>
                 <ul class="socials-list">
                   <li class="socials-item">
                     <a href="" class="socials-link">
@@ -274,15 +274,15 @@
             </li>
             <li class="team-member">
               <img
-                class="team-member-photo"
+                class="team-member__photo"
                 src="images/team/img3.jpg"
                 alt="Фото Миколи Тарасова"
                 width="270"
                 height="260"
               />
-              <div class="team-member-description">
-                <h3 class="team-member-name">Микола Тарасов</h3>
-                <p class="team-member-position" lang="en">Marketing</p>
+              <div class="team-member__description">
+                <h3 class="team-member__name">Микола Тарасов</h3>
+                <p class="team-member__position" lang="en">Marketing</p>
                 <ul class="socials-list">
                   <li class="socials-item">
                     <a href="" class="socials-link">
@@ -317,15 +317,15 @@
             </li>
             <li class="team-member">
               <img
-                class="team-member-photo"
+                class="team-member__photo"
                 src="images/team/img4.jpg"
                 alt="Фото Михайла Єрмакова"
                 width="270"
                 height="260"
               />
-              <div class="team-member-description">
-                <h3 class="team-member-name">Михайло Єрмаков</h3>
-                <p class="team-member-position" lang="en">UI Designer</p>
+              <div class="team-member__description">
+                <h3 class="team-member__name">Михайло Єрмаков</h3>
+                <p class="team-member__position" lang="en">UI Designer</p>
                 <ul class="socials-list">
                   <li class="socials-item">
                     <a href="" class="socials-link">
@@ -366,7 +366,7 @@
     <!--Clients-->
     <section class="clients section">
       <div class="container">
-        <h2 class="clients-title section-title">Постійні клієнти</h2>
+        <h2 class="clients-title section__title">Постійні клієнти</h2>
         <ul class="clients-list">
           <li class="clients-item">
             <a href="" class="clients-link">

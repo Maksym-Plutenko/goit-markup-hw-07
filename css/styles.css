@@ -51,7 +51,9 @@ body {
 .header-contacts-link,
 .address-list-link,
 .project-link,
-.register-form-checkbox-link {
+.register-form-checkbox-link,
+
+.link {
   text-decoration: inherit;
   color: inherit;
 }
@@ -67,7 +69,10 @@ body {
 .address-list-link:hover,
 .header-navigation-link:focus,
 .header-contacts-link:focus,
-.address-list-link:focus {
+.address-list-link:focus,
+
+.link:hover,
+.link:focus {
   color: var(--selected-text-color);
 }
 
@@ -75,7 +80,9 @@ body {
 .front-btn,
 .filters-btn,
 .register-form-btn,
-.subscribe-form-btn {
+.subscribe-form-btn,
+
+.button {
   font-family: inherit;
   border: none;
   cursor: pointer;
@@ -91,7 +98,9 @@ body {
 .filters-list,
 .projects-grid,
 .socials-list,
-.clients-list {
+.clients-list,
+
+.list {
   list-style-type: none;
   text-indent: 0;
   margin: 0;
@@ -123,10 +132,7 @@ p {
   padding-bottom: 94px;
 }
 
-/* .activity-title,
-.team-title  */
-
-.section-title {
+.section__title {
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
@@ -141,7 +147,7 @@ p {
   padding-bottom: 24px;
 }
 
-.header-container {
+.header__container {
   display: flex;
   align-items: center;
 }
@@ -152,29 +158,34 @@ p {
   font-size: 26px;
   line-height: calc(31 / 26);
   color: var(--selected-text-color);
+}
+
+.header__logo {
   margin-right: 93px;
 }
 
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 .dark-text {
   color: var(--dark-text-color);
 }
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
-.header-navigation {
+.navigation {
   margin-right: auto;
 }
 
-.header-navigation-list,
-.header-contacts {
+.navigation__list,
+.contacts {
   display: flex;
 }
 
-.header-navigation-item:not(:last-child),
-.header-contacts-item:not(:last-child) {
+.navigation__item:not(:last-child),
+.contacts__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.header-navigation-link,
-.header-contacts-link {
+.navigation__link,
+.contacts__link {
   font-weight: 500;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
@@ -187,7 +198,7 @@ p {
   align-items: center;
 }
 
-.header-contacts-icon {
+.contacts__icon {
   fill: currentColor;
 }
 
@@ -201,7 +212,7 @@ p {
   background-position: left calc(50%) top;
 }
 
-.front-title {
+.front__title {
   font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);
@@ -212,7 +223,7 @@ p {
   margin-bottom: 30px;
 }
 
-.front-btn {
+.front__btn {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -237,20 +248,20 @@ p {
 }
 
 /* Benefits */
-.benefits-list {
+.benefits__list {
   display: flex;
   justify-content: center;
 }
 
-.benefits-item {
+.benefits__item {
   flex-basis: 270px;
 }
 
-.benefits-item:not(:last-child) {
+.benefits__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.benefits-item-rectangle {
+.advantage {
   height: 120px;
 
   display: flex;
@@ -263,7 +274,7 @@ p {
   margin-bottom: 30px;
 }
 
-.benefits-item-title {
+.advantage__title {
   font-weight: 700;
   font-size: inherit;
   line-height: calc(16 / 14);
@@ -271,7 +282,7 @@ p {
   margin-bottom: 10px;
 }
 
-.benefits-item-content {
+.advantage__content {
   line-height: calc(24 / 14);
   color: var(--content--text-color);
 }
@@ -281,24 +292,24 @@ p {
   padding-top: 0;
 }
 
-.activity-list {
+.activity__list {
   display: flex;
   justify-content: center;
 }
 
-.activity-item {
+.activity-example {
   position: relative;
 }
 
-.activity-item-img {
+.activity-example__img {
   display: block;
 }
 
-.activity-item:not(:last-child) {
+.activity-example:not(:last-child) {
   margin-right: 30px;
 }
 
-.activity-item-description {
+.activity-example__description {
   position: absolute;
   left: 0px;
   bottom: 0px;
@@ -309,7 +320,7 @@ p {
   background: rgba(47, 48, 58, 0.8);
 }
 
-.activity-item-description-text {
+.activity-example__text {
   font-weight: 700;
   line-height: calc(16 / 14);
   text-align: center;
@@ -324,7 +335,7 @@ p {
   background-color: var(--secondary-bg-color);
 }
 
-.team-list {
+.team__list {
   display: flex;
   justify-content: center;
 }
@@ -340,24 +351,24 @@ p {
   margin-right: 30px;
 }
 
-.team-member-description {
+.team-member__description {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.team-member-name,
-.team-member-position {
+.team-member__name,
+.team-member__position {
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
 }
 
-.team-member-name {
+.team-member__name {
   font-weight: 500;
   margin-bottom: 10px;
 }
 
-.team-member-position {
+.team-member__position {
   color: var(--content--text-color);
   margin-bottom: 16px;
 }
@@ -442,7 +453,7 @@ p {
 .footer-logo {
   display: block;
   margin-bottom: 20px;
-  margin-right: 0;
+  /* margin-right: 0; */
 }
 
 .light-text {
