@@ -46,32 +46,34 @@ body {
 }
 
 /*link general style settings*/
-.logo,
+/* .logo,
 .header-navigation-link,
 .header-contacts-link,
 .address-list-link,
 .project-link,
-.checkbox__link,
+.checkbox__link, */
 
 .link {
   text-decoration: inherit;
   color: inherit;
+
+  transition: color var(--main-transition);
 }
 
-.header-navigation-link,
+/* .header-navigation-link,
 .header-contacts-link,
 .address-list-link,
 
 .link--transition{
   transition: color var(--main-transition);
-}
+} */
 
-.header-navigation-link:hover,
+/* .header-navigation-link:hover,
 .header-contacts-link:hover,
 .address-list-link:hover,
 .header-navigation-link:focus,
 .header-contacts-link:focus,
-.address-list-link:focus,
+.address-list-link:focus, */
 
 .link:hover,
 .link:focus {
@@ -79,10 +81,10 @@ body {
 }
 
 /*button general style settings*/
-.front-btn,
+/* .front-btn,
 .filters-btn,
 .register-form-btn,
-.subscription-form-btn,
+.subscription-form-btn, */
 
 .button {
   font-family: inherit;
@@ -91,7 +93,7 @@ body {
 }
 
 /*list style reset*/
-.header-navigation-list,
+/* .header-navigation-list,
 .header-contacts,
 .benefits-list,
 .activity-list,
@@ -100,7 +102,7 @@ body {
 .filters-list,
 .projects-grid,
 .socials-list,
-.clients-list,
+.clients-list, */
 
 .list {
   list-style-type: none;
@@ -166,11 +168,9 @@ p {
   margin-right: 93px;
 }
 
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-.dark-text {
+.logo__text--dark {
   color: var(--dark-text-color);
 }
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 .navigation {
   margin-right: auto;
@@ -193,7 +193,7 @@ p {
   letter-spacing: 0.02em;
 }
 
-.header-contacts-link {
+.contacts__link {
   color: var(--content--text-color);
   display: flex;
   gap: 10px;
@@ -376,13 +376,13 @@ p {
 }
 
 /* social network's links*/
-.socials-list {
+.socials {
   display: flex;
   gap: 10px;
   justify-content: center;
 }
 
-.socials-link {
+.socials__link {
   height: 44px;
   width: 44px;
 
@@ -397,13 +397,13 @@ p {
   transition: color var(--main-transition), background-color var(--main-transition);
 }
 
-.socials-link:hover,
-.socials-link:focus {
+.socials__link:hover,
+.socials__link:focus {
   color: var(--secondary-icon-color);
   background-color: var(--selected-text-color);
 }
 
-.socials-logo {
+.socials__logo {
   fill: currentColor;
 }
 
@@ -458,11 +458,9 @@ p {
   /* margin-right: 0; */
 }
 
-/* !!!!!!!!!!!!!!!!!!!! */
-.light-text {
+.logo__text--light {
   color: var(--light-text-color);
 }
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 .address {
   font-style: inherit;
@@ -494,7 +492,7 @@ p {
 }
 
 /* social network's links*/
-.footer-socials-link {
+.socials__link--light{
   color: var(--secondary-icon-color);
   background-color: var(--icon-bg-footer-color);
 }
