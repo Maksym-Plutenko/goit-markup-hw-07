@@ -60,7 +60,9 @@ body {
 
 .header-navigation-link,
 .header-contacts-link,
-.address-list-link {
+.address-list-link,
+
+.link--transition{
   transition: color var(--main-transition);
 }
 
@@ -957,12 +959,12 @@ p {
 }
 
 /* Active page styling */
-.active {
+.navigation__link--active {
   position: relative;
   color: var(--selected-text-color);
 }
 
-.active::after {
+.navigation__link--active::after {
   content: '';
 
   position: absolute;
