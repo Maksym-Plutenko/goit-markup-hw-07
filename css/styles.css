@@ -834,14 +834,14 @@ p {
 }
 
 /* Portfolio page */
-.filters-list {
+.filters__list {
   display: flex;
   justify-content: center;
   gap: 8px;
   margin-bottom: 50px;
 }
 
-.filters-btn {
+.filters__btn {
   background-color: var(--button-bg-secondary-color);
   border-radius: 4px;
   padding-left: 22px;
@@ -860,8 +860,8 @@ p {
     box-shadow var(--main-transition);
 }
 
-.filters-btn:hover,
-.filters-btn:focus {
+.filters__btn:hover,
+.filters__btn:focus {
   background-color: var(--button-bg-main-color);
   color: var(--light-text-color);
 
@@ -869,41 +869,41 @@ p {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.projects-grid {
+.projects__grid {
   display: flex;
   flex-wrap: wrap;
   row-gap: 30px;
   column-gap: 30px;
 }
 
-.projects-grid-item {
+.project {
   flex-basis: calc((100% - 60px) / 3);
 }
 
-.project-link {
+.project__link {
   display: block;
   transition: box-shadow var(--main-transition);
 }
 
-.project-link:hover,
-.project-link:focus {
+.project__link:hover,
+.project__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   transition: transform var(--main-transition);
 }
 
-.project-card {
+.project__card {
   position: relative;
   overflow: hidden;
 }
 
-.project-img {
+.project__img {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-.project-overlay {
+.project__overlay {
   position: absolute;
   left: 0;
   top: 0;
@@ -926,12 +926,12 @@ p {
   transition: transform var(--main-transition);
 }
 
-.project-link:hover .project-overlay,
-.project-link:focus .project-overlay {
+.project__link:hover .project__overlay,
+.project__link:focus .project__overlay {
   transform: translate(0);
 }
 
-.project-description {
+.project__description {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
@@ -942,7 +942,7 @@ p {
   border-bottom: 1px solid var(--main-border-color);
 }
 
-.project-title {
+.project__title {
   font-weight: 700;
   font-size: 18px;
   line-height: calc(36 / 18);
@@ -950,7 +950,7 @@ p {
   margin-bottom: 4px;
 }
 
-.project-content {
+.project__text {
   font-size: 16px;
   line-height: calc(30 / 16);
   color: var(--content--text-color);
