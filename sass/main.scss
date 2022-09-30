@@ -1,6 +1,7 @@
 // utils
 @import 'utils/variables';
 @import 'utils/default-text-style';
+@import 'utils/container';
 @import 'utils/common-classes';
 @import 'utils/text-margins-reset';
 @import 'utils/visually-hidden';
@@ -19,3 +20,4 @@
   // portfolio page
 @import 'components/portfolio-page';
   // small components
+@import 'components/logo';

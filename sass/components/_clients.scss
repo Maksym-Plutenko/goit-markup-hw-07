@@ -17,13 +17,19 @@
     border-radius: 4px;
   
     transition: color var(--main-transition), border-color var(--main-transition);
+
+    &:hover,
+    &:focus {
+      color: var(--selected-text-color);
+      border-color: var(--selected-text-color);
+    }
   }
   
-  .brand__link:hover,
-  .brand__link:focus {
-    color: var(--selected-text-color);
-    border-color: var(--selected-text-color);
-  }
+  // .brand__link:hover,
+  // .brand__link:focus {
+  //   color: var(--selected-text-color);
+  //   border-color: var(--selected-text-color);
+  // }
   
   .brand__logo {
     fill: currentColor;

@@ -5,11 +5,15 @@
   
   .benefits__item {
     flex-basis: 270px;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
   
-  .benefits__item:not(:last-child) {
-    margin-right: 30px;
-  }
+  // .benefits__item:not(:last-child) {
+  //   margin-right: 30px;
+  // }
   
   .advantage {
     height: 120px;

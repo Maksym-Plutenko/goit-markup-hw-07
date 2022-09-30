@@ -9,15 +9,19 @@
   
   .activity-example {
     position: relative;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
   
   .activity-example__img {
     display: block;
   }
   
-  .activity-example:not(:last-child) {
-    margin-right: 30px;
-  }
+  // .activity-example:not(:last-child) {
+  //   margin-right: 30px;
+  // }
   
   .activity-example__description {
     position: absolute;
