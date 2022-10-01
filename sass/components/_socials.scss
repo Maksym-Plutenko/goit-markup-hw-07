@@ -1,4 +1,3 @@
-  /* social network's links*/
   .socials {
     display: flex;
     gap: 10px;
@@ -31,19 +30,6 @@
       }
   }
   
-//   .socials__link:hover,
-//   .socials__link:focus {
-//     color: var(--secondary-icon-color);
-//     background-color: var(--selected-text-color);
-//   }
-  
   .socials__logo {
     fill: currentColor;
   }
-
-    
-//   /* social network's links*/
-//   .socials__link--light{
-//     color: var(--secondary-icon-color);
-//     background-color: var(--icon-bg-footer-color);
-//   }
